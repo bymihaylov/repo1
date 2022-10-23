@@ -1,6 +1,6 @@
 #include <iostream>
 
-main() {
+int main() {
     
     int num1, num2;
     char operation;
@@ -8,23 +8,24 @@ main() {
 
     switch (operation)
     {
-    case '+':{
-        std::cout << (num1 + num2);
+    case '+':
+        std::cout << (num1 + num2) << std::endl;
         break;
-        }
-    case '-':{
-        std::cout << (num1 - num2);
+        
+    case '-':
+        std::cout << (num1 - num2) << std::endl;
         break;
-        }
-    case '/': {
+    
+    case '*':
+        std::cout << (num1 * num2) << std::endl;
+        break;
+        
+    case '/': 
         double doubleNum1 = num1;
         double doubleNum2 = num2;
-        std::cout << (doubleNum1 / doubleNum2);
+        std::cout << (doubleNum1 / doubleNum2) << std::endl;
         break;
-        }
-    case '*':{
-        std::cout << (num1 * num2);
-        break;
-        }
+        
+        
     }
 }

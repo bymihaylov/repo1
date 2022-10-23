@@ -1,19 +1,20 @@
 #include <iostream>
 using namespace std;
 
-main() {
-    int year;
-    cout << "Enter a year: ";
-    cin >> year;
+int main() {
 
-    int subtract = (year / 100) * 100;
-    bool checkFor00 = year - subtract == 0;
+        int year;
+        cout << "Enter a year: ";
+        cin >> year;
 
-    if(checkFor00 && !(year % 400)){
-        cout << year << " e visokosna.\n";
-    }  
-    if (year % 4){
-        cout << year << " e visokosna.\n";
-    }
+        bool areTheLastDigits00 = !(year % 100);
+        
+        
+        if(areTheLastDigits00 == 1 && !(year % 400)){
+            cout << year << " is a leap year." << endl;
+        } else if (!(year % 4)) { 
+           cout << year << " is a leap year." << endl;
+        } else{
+            cout << year <<  " is not a leap year!" << endl;
+        }
 }
-// ne raboti
