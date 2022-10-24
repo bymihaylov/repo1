@@ -7,7 +7,6 @@ int main() {
     cin >> a >> b;
     
     while(a <= b){
-         //cout << a << "\t" << (a / 10) << (a % 10) << endl;
          firstDigit = a % 10;
          secondDigit = (a % 100) / 10;
          thirdDigit = a / 100;
