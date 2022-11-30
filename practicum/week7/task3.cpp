@@ -58,9 +58,10 @@ void populateArray(int array[], int len){
 
 int main(){
     int lenArr1, lenArr2;
+    int array[100];
+    /*
     int arr1[50];
     int arr2[50];
-    int array[100];
 
     cout << "Enter the size of arr1[?]: ";
     cin >> lenArr1;
@@ -68,6 +69,12 @@ int main(){
     cout << "Enter the size of arr2[?]: ";
     cin >> lenArr2; 
     populateArray(arr2, lenArr2);
+    */
+   // Debug
+   lenArr1 = 3;
+   int arr1[10] = {1, 2, 3};
+   lenArr2 = 4;
+   int arr2[10] = {5, 10, 15, 20};
 
     int lenArrayNew = lenArr1+lenArr2;
 
